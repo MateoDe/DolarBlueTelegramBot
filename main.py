@@ -1,10 +1,12 @@
 from dolar_price import get_price
 import telebot
 
+
 DOLAR_BLUE_URL = 'https://www.cronista.com/MercadosOnline/dolar.html'
 COMPRA_XPATH = '//*[@id="dcompra1"]/div[1]/text()'
 VENTA_XPATH = '//*[@id="dventa1"]/div[1]/text()'
 TOKEN = input('Token de telegram: ')
+
 
 bot = telebot.TeleBot(TOKEN)
 
