@@ -4,7 +4,7 @@ import telebot
 DOLAR_BLUE_URL = 'https://www.dolarhoy.com/cotizaciondolarblue'
 COMPRA_XPATH = '/html/body/div/div/div/div[1]/div[1]/div[1]/h4/span/text()'
 VENTA_XPATH = '/html/body/div/div/div/div[1]/div[1]/div[2]/h4/span/text()'
-TOKEN = '1420679449:AAFnIWysvZ1IOq5Im_CTD34NLz-GeVgM2RM'
+TOKEN = 'YOUR TOKEN'
 
 bot = telebot.TeleBot(TOKEN)
 
