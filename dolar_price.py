@@ -10,7 +10,6 @@ def get_price(link, compra, venta):
         if response.status_code == 200:
             page = response.content.decode('utf-8')
             parsed = html.fromstring(page)
-            sleep(1)
             try:
                 buy_price = parsed.xpath(compra)
                 sell_price = parsed.xpath(venta)
@@ -22,7 +21,7 @@ def get_price(link, compra, venta):
                 print(f'Error {ve}')
 
         else:
-            return ['NO DISPONIBLE', 'NO DISPONIBLE'] 
+            get_price(link, compra, venta) 
     except ValueError as ve:
         print(f'Error {ve}')
 
