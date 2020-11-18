@@ -11,6 +11,7 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['precio'])
 def price_message(message):
-	bot.reply_to(message, f'Precio de COMPRA: {get_price(DOLAR_BLUE_URL, COMPRA_XPATH, VENTA_XPATH)[0]} Precio de VENTA: {get_price(DOLAR_BLUE_URL, COMPRA_XPATH, VENTA_XPATH)[1]} FUENTE: El Cronista')
+	price = get_price(DOLAR_BLUE_URL, COMPRA_XPATH, VENTA_XPATH)
+	bot.reply_to(message, f'Precio de COMPRA: {price[0]} Precio de VENTA: {price[1]} FUENTE: El Cronista')
 
-bot.polling()
+bot.polling()	
