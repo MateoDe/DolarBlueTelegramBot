@@ -17,4 +17,4 @@ def price_message(message):
 	bot.reply_to(message, f'Precio de COMPRA: {price[0]} \nPrecio de VENTA: {price[1]} \nFUENTE: El Cronista \nAceptamos donaciones para mantener el bot en linea:
 	\nBTC: 17oyXUTzgcznNjgw3eN72vsHHFTptKFQx1 \nETH: 0xd0e693bb20a99950777e6cf6883574e6c35c1709')
 
-bot.polling()	
+bot.polling()
